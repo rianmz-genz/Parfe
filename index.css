@@ -1,0 +1,148 @@
+/* Coded By Adrian Aji Septa 30 AUGUST 2022 */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+button, li{
+    font-family: inherit;
+}
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 2rem 1.5rem;
+}
+.container{
+    max-width: 700px;
+}
+h1{
+    color: hsl(212, 21%, 14%);
+}
+.price{
+    color: hsl(158, 36%, 37%);
+}
+h1, 
+.price{
+    font-family: 'Fraunces', sans-serif;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+}
+.container h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+.container article:first-child img{
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+.container article:last-child{
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    margin-top: -1rem;
+}
+.container p{
+    margin-bottom: 2rem;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.container ul li:first-child{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.container ul li:nth-child(2){
+    color: hsl(212, 21%, 14%);
+}
+.container .btn{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .btn:hover{
+    background-color: hsl(159, 35%, 19%);
+    transition: all ease-in-out .25s;
+}
+.container .btn img{
+    margin-right: 0.5rem;
+}
+.container .gam img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.attribution{
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 640px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container .gam img{
+        width: 100%;
+       
+    }
+    .container article:first-child img{
+        border-radius: 0.625rem 0  0 0.625rem;
+        margin-top: -1rem;
+    }
+    .container article:last-child{
+        border-radius:  0 0.625rem 0.625rem 0 ;
+    }
+    .container p{
+        margin-bottom: 1rem;
+    }
+    .container h1{
+        font-size: 2rem;
+
+    }
+    .container ul{
+        margin-bottom: 1rem;
+    }
+    img{
+        height: 100%;
+        object-fit: none;
+    }
+
+}
